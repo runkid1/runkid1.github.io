@@ -102,10 +102,13 @@
     const imgDom=document.getElementById('img')
     var timer1 = setTimeout(() => {
       imgDom.src=addImg
-// 	    document.getElementById('img').src=IMG_KEY[random-1].value
+      clearTimeout(timer1)
     }, 8000)
     imgDom.addEventListener('click',function(){
       console.log(imgDom.src)
+      if(imgDom.src=='https://runkid1.github.io/imgadd.jpg'){
+        imgDom.src=IMG_KEY[random-1].value
+      }
     },false)
   </script>
 
