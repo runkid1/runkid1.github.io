@@ -99,10 +99,14 @@
     ]
     const addImg='./imgadd.jpg'
     const random = Math.ceil(Math.random() * 3)
+    const imgDom=document.getElementById('img')
     var timer1 = setTimeout(() => {
-      document.getElementById('img').src=addImg
+      imgDom.src=addImg
 // 	    document.getElementById('img').src=IMG_KEY[random-1].value
     }, 8000)
+    imgDom.addEventListener('click',function(){
+      console.log(imgDom.src)
+    })
   </script>
 
 </body>
