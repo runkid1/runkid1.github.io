@@ -97,10 +97,12 @@
         value: './bingqiling.jpg',
       },
     ]
+    const addImg='./imgadd.jpg'
     const random = Math.ceil(Math.random() * 3)
     var timer1 = setTimeout(() => {
-      document.getElementById('img').src=IMG_KEY[random-1].value
-		}, 8000)
+      document.getElementById('img').src=addImg
+// 	    document.getElementById('img').src=IMG_KEY[random-1].value
+    }, 8000)
   </script>
 
 </body>
